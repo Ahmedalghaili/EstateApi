@@ -13,15 +13,37 @@ EstateApi is a simple RESTful API for managing real estate properties, built usi
 - PHP >= 8.0
 - Laravel >= 9.x
 - Composer
-
 ### Steps to Run Locally
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ahmedalghaili/EstateApi.git
+   
+2. Navigate into the project directory:
+
 ```bash
-git clone https://github.com/Ahmedalghaili/EstateApi.git
 cd EstateApi
+
+3- Install dependencies using Composer:
+
+```bash
 composer install
+
+4-Set up the .env file:
+
+Generate the application key:
+
+bash
+Copy code
+```bash
 php artisan key:generate
-# Configure your .env file with your database connection. 
-# Set the DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD variables in the .env file
-php artisan migrate
-php artisan serve
+
+Configure your database connection:
+
+Open the .env file and set the following database connection variables:
+DB_CONNECTION: Your database driver (e.g., mysql).
+DB_HOST: The host of your database server (e.g., 127.0.0.1).
+DB_PORT: The port of your database server (e.g., 3306 for MySQL).
+DB_DATABASE: The name of your database.
+DB_USERNAME: Your database username.
+DB_PASSWORD: Your database password.
