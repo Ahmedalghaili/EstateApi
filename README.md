@@ -12,38 +12,51 @@ EstateApi is a simple RESTful API for managing real estate properties, built usi
 ### Requirements
 - PHP >= 8.0
 - Laravel >= 9.x
-- Composer
-### Steps to Run Locally
+- Composer### Steps to Run Locally
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Ahmedalghaili/EstateApi.git
-   
-2. Navigate into the project directory:
+# 1. Clone the repository
+git clone https://github.com/Ahmedalghaili/EstateApi.git
 
-```bash
+# 2. Navigate into the project directory
 cd EstateApi
 
-3- Install dependencies using Composer:
-
-```bash
+# 3. Install dependencies using Composer
 composer install
 
-4-Set up the .env file:
+# 4. Set up the .env file
+# If the .env file does not exist, copy the .env.example to .env
+cp .env.example .env
 
-Generate the application key:
-
-bash
-Copy code
-```bash
+# 5. Generate the application key
 php artisan key:generate
 
-Configure your database connection:
+# 6. Configure your database connection
+# Open the .env file and set the following database connection variables:
+# DB_CONNECTION: Your database driver (e.g., mysql)
+# DB_HOST: The host of your database server (e.g., 127.0.0.1)
+# DB_PORT: The port of your database server (e.g., 3306 for MySQL)
+# DB_DATABASE: The name of your database
+# DB_USERNAME: Your database username
+# DB_PASSWORD: Your database password
 
-Open the .env file and set the following database connection variables:
-DB_CONNECTION: Your database driver (e.g., mysql).
-DB_HOST: The host of your database server (e.g., 127.0.0.1).
-DB_PORT: The port of your database server (e.g., 3306 for MySQL).
-DB_DATABASE: The name of your database.
-DB_USERNAME: Your database username.
-DB_PASSWORD: Your database password.
+# 7. Run the database migrations
+php artisan migrate
+
+# 8. Serve the application locally
+php artisan serve
+
+# Now you can access the API at http://127.0.0.1:8000
+
+
+# API Endpoints
+POST /api/properties: Create a new property.
+GET /api/properties: List all properties.
+GET /api/properties/search: Search for properties by criteria (type, address, size, etc.).
+
+# Future Improvements
+Implement user authentication to manage properties.
+Add validation for user inputs.
+Implement rate limiting to protect the API from abuse.
+
+I added the specific instruction to configure the database connection in the `.env` file. Let me know if you need anything else!
+
