@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcomessssdfgvbhnjkm,l;.');
+    return view('welcome'); // Make sure there's a welcome.blade.php file
 });

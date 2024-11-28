@@ -3,7 +3,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\PropertyController;
 
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,7 +26,7 @@ Route::get('/', function () {
 });
 
 // Property routes
-Route::post('properties', action: [PropertyController::class, 'store']);   // Create a new property
+Route::post('properties', [PropertyController::class, 'store']);   // Create a new property
 Route::get('properties', [PropertyController::class, 'index']);   // List all properties
 Route::get('properties/search', [PropertyController::class, 'search']); // Search properties by criteria
 
