@@ -14,6 +14,8 @@ EstateApi is a simple RESTful API for managing real estate properties, built usi
 - Laravel >= 9.x
 - Composer### Steps to Run Locally
 
+### Steps to Run Locally
+
 # 1. Clone the repository
 git clone https://github.com/Ahmedalghaili/EstateApi.git
 
