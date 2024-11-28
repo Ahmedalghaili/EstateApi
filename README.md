@@ -1,5 +1,4 @@
 
-
 # EstateApi
 
 EstateApi is a simple RESTful API built using PHP and Laravel for managing real estate properties. This API allows users to create, search, and filter properties based on various criteria such as type, address, size, bedrooms, and geolocation.
@@ -157,10 +156,3 @@ To test the API endpoints, you can use tools like **[Postman](https://www.postma
 ## Future Improvements
 - Implement user authentication with JWT or OAuth.
 - Add additional filters for advanced searches (e.g., available date, amenities).
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).
-```
-
----
-
