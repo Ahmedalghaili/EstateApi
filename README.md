@@ -153,6 +153,3 @@ To test the API endpoints, you can use tools like **[Postman](https://www.postma
    - For the **Create Property** endpoint, use the **POST** method, set the URL to `http://127.0.0.1:8000/api/properties`, and add the JSON body in the request body section.
    - For the **Search Properties** endpoint, use the **GET** method with query parameters (e.g., `http://127.0.0.1:8000/api/properties/search?type=house&price=500000`).
 
-## Future Improvements
-- Implement user authentication with JWT or OAuth.
-- Add additional filters for advanced searches (e.g., available date, amenities).
